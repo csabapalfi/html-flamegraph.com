@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.loading-message {
+  background-color: #febc38;
+}
+
+.spinner {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+}
+.spinner div {
+  display: inline-block;
+  position: absolute;
+  width: 1em;
+  background:#4dc0b5;
+  animation: spinner 0.8s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.spinner div:nth-child(1) {
+  left: -2.5em;
+  animation-delay: -0.24s;
+}
+.spinner div:nth-child(2) {
+  left: -0.5em;
+  animation-delay: -0.12s;
+}
+.spinner div:nth-child(3) {
+  left: 1.5em;
+  animation-delay: 0;
+}
+@keyframes spinner {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+.flamegraph {
+    height: calc(100vh - 120px);
+}
+
+@media (min-width: 576px) {
+  .flamegraph {
+    height: calc(100vh - 64px);
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "lib": ["dom","es2020"],
+    "esModuleInterop": true,
+    "jsx": "react",
+    "typeRoots": ["node_modules/@types", "src/local-types"]
+  },
+  "paths": {
+    "react-flame-graph": ["./src/local-types/react-flame-graph"]
+  },
+  "exclude": ["node_modules", "src/local-types/**"],
+}
