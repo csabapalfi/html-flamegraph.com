@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/main.css"],
+  "sourcesContent": ["html, body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n  height: 100%;\n}\n\n.loading-message {\n  background-color: #febc38;\n}\n\n.spinner {\n  display: inline-block;\n  position: relative;\n  left: 50%;\n}\n.spinner div {\n  display: inline-block;\n  position: absolute;\n  width: 1em;\n  background:#4dc0b5;\n  animation: spinner 0.8s cubic-bezier(0, 0.5, 0.5, 1) infinite;\n}\n.spinner div:nth-child(1) {\n  left: -2.5em;\n  animation-delay: -0.24s;\n}\n.spinner div:nth-child(2) {\n  left: -0.5em;\n  animation-delay: -0.12s;\n}\n.spinner div:nth-child(3) {\n  left: 1.5em;\n  animation-delay: 0;\n}\n@keyframes spinner {\n  0% {\n    top: 6px;\n    height: 51px;\n  }\n  50%, 100% {\n    top: 19px;\n    height: 26px;\n  }\n}\n\n.flamegraph {\n    height: calc(100vh - 120px);\n}\n\n@media (min-width: 576px) {\n  .flamegraph {\n    height: calc(100vh - 64px);\n  }\n}"],
+  "mappings": "AAAA,6BAGE,uBACA,YAGF,iBACE,yBAGF,SACE,qBACA,kBACA,SAEF,aACE,qBACA,kBACA,UACA,mBACA,uDAEF,0BACE,YACA,sBAEF,0BACE,WACA,sBAEF,0BACE,WACA,kBAEF,sBAEI,QACA,mBAGA,SACA,aAIJ,YACI,2BAGJ,0BACE,YACE",
+  "names": []
+}
